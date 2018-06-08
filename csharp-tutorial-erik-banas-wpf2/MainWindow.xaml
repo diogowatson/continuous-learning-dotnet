@@ -1,0 +1,61 @@
+﻿<Window x:Class="WpfTutorial2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTutorial2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+        <!--<Label x:Name="lblTop" DockPanel.Dock="Top" Content="TOP"/>
+        <Label x:Name="lblLeft" DockPanel.Dock="Left" Content="LEFT"/>
+        <Label x:Name="lblRight" DockPanel.Dock="Right" Content="RIGHT"/>
+        <Label x:Name="lblBotton" DockPanel.Dock="Bottom" Content="BOTTOM"/>
+        <Label x:Name="lblCenter" DockPanel.Dock="Center" Content="CENTER"/>-->
+
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem x:Name="menuNew" Header="_New"
+                          InputGestureText="Ctrl+N">
+                    <MenuItem.Icon>
+                    <Image Source="Resources\Windows-Folder.ico"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_File">
+                <MenuItem x:Name="menuOPen" Header="_Open"
+                          InputGestureText="Ctrl+O" Click="menuOpenClick">
+                    <MenuItem.Icon>
+                        <Image Source="Resources\open-folder.ico"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem x:Name="menuSave" Header="_Save"
+                          InputGestureText="Ctrl+O" Click="menuSaveClick">
+                <MenuItem.Icon>
+                    <Image Source="Resources\save.ico"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem x:Name="menuExit" Header="Exit"
+                          InputGestureText="Ctrl+X" Click="menuExitClick">
+                <MenuItem.Icon>
+                    <Image Source="Resources\exit.ico"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="_Edit">
+                <MenuItem x:Name="menuCut" Header="Cut"  InputGestureText="Ctrl+X"/>
+                <MenuItem x:Name="menuCopy" Header="Copy"  InputGestureText="Ctrl+C"/>
+                <MenuItem x:Name="menuPaste" Header="Paste"  InputGestureText="Ctrl+V"/>
+                <Separator/>
+                <MenuItem Header="_Font" InputGestureText="Ctrl+F">
+                    <MenuItem x:Name="menuFontTimes" Header="Times" IsCheckable="True" StaysOpenOnClick="True" Click="MenuFontTimes_Click"/>
+                    <MenuItem x:Name="menuFontCourier" Header="Courier" IsCheckable="True" StaysOpenOnClick="True" Click="MenuFontCourier_Click"/>
+                    <MenuItem x:Name="menuFontArial" Header="Arial" IsCheckable="True" StaysOpenOnClick="True" Click="MenuFontArial_Click"/>
+                </MenuItem>
+            </MenuItem>
+                                
+        </Menu>
+
+        <TextBox x:Name="txtBoxDoc" Height="290" Width="500"/>
+    </DockPanel>
+</Window>
