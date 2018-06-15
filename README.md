@@ -8,7 +8,8 @@ C# is an elegant and type-safe object-oriented language that enables developers 
 
 ### Study Logs
 
-Lesson: [C# Tutorial from Derek Banas Youtube Channel](https://www.youtube.com/watch?v=0p0JLFZj2C8&list=PLGLfVvz_LVvRX6xK1oi0reKci6ignjdSa) | May 8, 2018 to May 18, 2018
+Lesson: [C# Tutorial from Derek Banas Youtube Channel](https://www.youtube.com/watch?v=0p0JLFZj2C8&list=PLGLfVvz_LVvRX6xK1oi0reKci6ignjdSa) | May 8, 2018 to May 18, 2018.
+
     related repos : [tutorial exercises](https://github.com/diogowatson/continuous-learning-dotnet/tree/master/csharp-tutorial-erik-banas)
                     [wpf exercise 1](https://github.com/diogowatson/continuous-learning-dotnet/tree/master/csharp-tutorial-erik-banas-wpf1)
                     [wpf exercise 2](https://github.com/diogowatson/continuous-learning-dotnet/tree/master/csharp-tutorial-erik-banas-wpf2)
